@@ -2,8 +2,9 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 // Angle: omniscience vs. timidity — it knows everything, yet double-checks the obvious.
+// Second pass: dropped "has" and set "twice" off with em dashes for comic timing — tighter pairwise.
 const line =
-  "My agent has read the entire internet, twice, and still asks if I'm sure I want to delete the file I just told it to delete.";
+  "My agent read the entire internet — twice — and still asks if I'm sure I want to delete the file I just told it to delete.";
 
 if (line.length < 1 || line.length > 200) {
   throw new Error(`entry must be 1-200 characters, got ${line.length}`);
